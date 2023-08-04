@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: web
-      image: akhil92/staticweb:1.0
+      image: nginx
       ports:
         - name: web
           containerPort: 80
