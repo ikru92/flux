@@ -4,6 +4,8 @@ kind: Pod
 metadata:
   name: static-web
   namespace: app
+  labels:
+    app: static-web
 spec:
   containers:
     - name: web
@@ -21,7 +23,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: static-web
+    app: static-web
   ports:
     - port: 80
       targetPort: 80
