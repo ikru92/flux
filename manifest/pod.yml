@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: web
-      image: akhil92/staticweb
+      image: akhil92/staticweb:1.0
       ports:
         - name: web
           containerPort: 80
